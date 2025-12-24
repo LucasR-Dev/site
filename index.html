@@ -35,7 +35,7 @@ header p {
 /* CONTAINER */
 .container {
     max-width: 1000px;
-    margin: -60px auto 0; /* cria ligação com o header */
+    margin: -60px auto 0;
     padding: 10px 20px 30px;
 }
 
@@ -46,15 +46,6 @@ section {
     padding: 35px;
     border-radius: 25px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-section h2 {
-    color: #240592;
-    margin-top: 0;
 }
 
 /* GALERIA */
@@ -82,13 +73,6 @@ section h2 {
     max-width: 380px;
     margin: auto;
     border-radius: 25px;
-    display: block;
-}
-
-.product div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* PREÇOS */
@@ -96,13 +80,11 @@ section h2 {
     font-size: 2.2rem;
     color: #f50a0a;
     font-weight: bold;
-    margin: 10px 0;
 }
 
 .old-price {
     text-decoration: line-through;
     color: #999;
-    margin-bottom: 5px;
 }
 
 /* BOTÃO */
@@ -115,8 +97,6 @@ section h2 {
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
-    font-size: 1.1rem;
-    width: fit-content;
 }
 
 .cta-btn:hover {
@@ -129,11 +109,6 @@ section h2 {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
-    .cta-btn {
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 </style>
 </head>
@@ -143,7 +118,7 @@ section h2 {
 <header>
     <h1>🎨 ABC PARA COLORIR</h1>
     <p>Aprender brincando nunca foi tão divertido!</p>
-    <p>🖍️ Alfabetização criativa, leve e divertida</p>
+    <p>🖍️ Alfabetização criativa para crianças</p>
 </header>
 
 <div class="container">
@@ -153,7 +128,7 @@ section h2 {
     <div class="gallery">
         <img src="pais1.png" alt="Família colorindo junta">
         <img src="pais2.png" alt="Pais e filhos aprendendo">
-        <img src="pais3.png" alt="Momento de aprendizado em família">
+        <img src="pais3.png" alt="Momento educativo em família">
     </div>
 </section>
 
@@ -164,33 +139,75 @@ section h2 {
         <img src="capa.png" alt="Capa do ABC para Colorir">
 
         <div>
-            <p>📂 Material digital em PDF</p>
-            <p>🖨️ Pronto para imprimir quantas vezes quiser</p>
-            <p>🔠 Letras de A a Z</p>
-            <p>🎨 Ilustrações educativas e fofas</p>
+            <p>📂 Produto digital (PDF)</p>
+            <p>🖨️ Imprima quantas vezes quiser</p>
+            <p>🔠 Alfabeto completo de A a Z</p>
+            <p>🎨 Atividades educativas e divertidas</p>
 
             <p class="old-price">De R$ 29,90</p>
             <p class="price">Por apenas R$ 11,99</p>
 
-            <a href="https://ev.braip.com/checkout/plapzq6z/chez0zpp?currency=BRL" class="cta-btn">🛒 QUERO O ABC PARA COLORIR</a>
+            <a href="https://ev.braip.com/checkout/plapzq6z/chez0zpp?currency=BRL" class="cta-btn">
+                🛒 COMPRAR AGORA
+            </a>
+
+            <p style="margin-top:15px; font-size:0.9rem;">
+                🔒 Pagamento 100% seguro pela Braip
+            </p>
         </div>
     </div>
 </section>
 
 <section>
     <h2>❓ Dúvidas Frequentes</h2>
-    <p><strong>O material é digital?</strong><br>Sim! Você recebe o PDF por e-mail.</p>
-    <p><strong>Para qual idade?</strong><br>Indicado para crianças de 3 a 6 anos.</p>
+    <p><strong>O material é digital?</strong><br>
+    Sim. Após a confirmação do pagamento, o acesso é enviado automaticamente por e-mail.</p>
+
+    <p><strong>Para qual idade é indicado?</strong><br>
+    Crianças de 3 a 6 anos.</p>
+
+    <p><strong>Posso pedir reembolso?</strong><br>
+    Sim. Você tem até 7 dias após a compra, conforme o Código de Defesa do Consumidor.</p>
+</section>
+
+<section>
+    <h2>📞 Suporte ao Cliente</h2>
+
+    <p>
+        Caso tenha qualquer dúvida, dificuldade de acesso ou precise de ajuda,
+        nosso suporte está disponível.
+    </p>
+
+    <p><strong>📧 E-mail:</strong><br>abcparacolorir@gmail.com</p>
+
+    <!-- <p><strong>💬 WhatsApp:</strong><br>
+    <a href="https://wa.me/5533991360469" target="_blank">
+        Clique aqui para falar no WhatsApp
+    </a>
+    </p> -->
+
+    <p><strong>⏰ Atendimento:</strong><br>
+    Segunda a Sexta, das 9h às 18h
+    </p>
 </section>
 
 </div>
 
-</body>
+<footer style="text-align:center; padding:30px 20px; color:#fff; font-size:0.85rem;">
+    <p>© 2025 ABC para Colorir – Todos os direitos reservados</p>
+    <p>Produto digital. Os resultados podem variar de acordo com o uso.</p>
+    <p>Este site não é afiliado ao Facebook ou Google.</p>
+</footer>
+
 <script>
 (function(w,d,s,t){
-    if(w._brpBstr)return;w._brpBstr=t;var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
-    j.async=true;j.src="https://ev.braip.com/js/braip-booster.js?v="+t;
+    if(w._brpBstr)return;w._brpBstr=t;
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+    j.async=true;
+    j.src="https://ev.braip.com/js/braip-booster.js?v="+t;
     f.parentNode.insertBefore(j,f);
 })(window,document,'script',Date.now());
 </script>
+
+</body>
 </html>
