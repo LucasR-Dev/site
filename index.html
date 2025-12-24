@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>ABC para Colorir | Aprender Brincando</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #58057e, #e4a9ff);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    color: white;
+    padding: 60px 20px 90px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    margin: 6px 0;
+    font-size: 1.2rem;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: -60px auto 0; /* cria ligação com o header */
+    padding: 10px 20px 30px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    margin-top: 25px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    color: #240592;
+    margin-top: 0;
+}
+
+/* GALERIA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* PRODUTO */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.product img {
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    border-radius: 25px;
+    display: block;
+}
+
+.product div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* PREÇOS */
+.price {
+    font-size: 2.2rem;
+    color: #f50a0a;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+/* BOTÃO */
+.cta-btn {
+    display: inline-block;
+    background: #58057e;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    width: fit-content;
+}
+
+.cta-btn:hover {
+    background: #2f023d;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cta-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎨 ABC PARA COLORIR</h1>
+    <p>Aprender brincando nunca foi tão divertido!</p>
+    <p>🖍️ Alfabetização criativa, leve e divertida</p>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>👨‍👩‍👧 Aprender juntos é ainda melhor</h2>
+    <div class="gallery">
+        <img src="pais1.png" alt="Família colorindo junta">
+        <img src="pais2.png" alt="Pais e filhos aprendendo">
+        <img src="pais3.png" alt="Momento de aprendizado em família">
+    </div>
+</section>
+
+<section>
+    <h2>📘 Conheça o ABC para Colorir</h2>
+
+    <div class="product">
+        <img src="capa.png" alt="Capa do ABC para Colorir">
+
+        <div>
+            <p>📂 Material digital em PDF</p>
+            <p>🖨️ Pronto para imprimir quantas vezes quiser</p>
+            <p>🔠 Letras de A a Z</p>
+            <p>🎨 Ilustrações educativas e fofas</p>
+
+            <p class="old-price">De R$ 29,90</p>
+            <p class="price">Por apenas R$ 11,99</p>
+
+            <a href="https://www.google.com" class="cta-btn">🛒 QUERO O ABC PARA COLORIR</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>❓ Dúvidas Frequentes</h2>
+    <p><strong>O material é digital?</strong><br>Sim! Você recebe o PDF por e-mail.</p>
+    <p><strong>Para qual idade?</strong><br>Indicado para crianças de 3 a 6 anos.</p>
+</section>
+
+</div>
+
+</body>
+</html>
